@@ -1,0 +1,174 @@
+/* CSSリセット */
+body, h1, h2, h3, h4, h5, h6, p,  ul, figure {           
+  margin: 0;  
+  padding: 0;  
+  list-style-type: none;
+}  
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}  
+
+a {
+  color: inherit;  
+  text-decoration: none;  
+}  
+
+
+/* 各スタイル */
+/* 共通 */
+img {
+  border-radius: 7px;
+}
+body {
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+}
+
+span {
+  font-family: 'Roboto', sans-serif;
+
+}
+.container {
+	width: 85%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* ヘッダー */
+.header {
+  height: 50px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.header img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.header .back-home {
+  color: #4392e0;
+  line-height: 59px;
+  font-size: 25px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  line-height: 47px;
+}
+/* 投稿記事 */
+.article {
+  border-top: 1px solid #cccccc;
+}
+.article .top-post {
+  height: 40px;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 10px;
+}
+.article .top-post ul {
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+.article .top-post .user{
+  margin-left: 10px;
+  color: #4d4d4d;
+  font-weight: bold;
+}
+.article .top-post .user-icon {
+  margin-left: 5px;
+  color: #4d4d4d;
+  font-size: 20px;
+}
+.article .top-post .post-time {
+  font-size: 12px;
+  color: #999999;
+}
+
+.article .main-post ul li {
+  margin: 0 0 8px 0;
+}
+
+.article .main-post ul li i{
+  color: #666666;
+}
+
+.article .main-post span {
+  margin-left: 10px;
+  color: #333333;
+}
+
+.article .main-post p {
+  background: #f5f5f5;
+  border-radius: 7px;
+  padding: 10px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.article .main-post,
+.article .images {
+  margin: 0 0 0 30px;
+}
+
+.article .images .main img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.article .images .thumbnails ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  gap: 3px;
+  margin-top: 3px;
+  padding-bottom: 20px;
+}
+
+.article .images .thumbnails img {
+  height: 45px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* フローティングメニュー */
+.nav i {
+  position: fixed;
+  bottom: 3%;
+  left: 75%;
+  color: #ffffff;
+  background:#4392e0;
+  font-size: 35px;
+  border: 1px #ffffff solid;
+  border-radius: 50px;
+  padding: 17px;
+}
+
+
+.nav a {
+  width: 40px;
+  height: 40px;
+  background:white;
+}
+/* フッダー */
+footer{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #4392e4;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+}
+ 
+

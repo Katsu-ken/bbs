@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="input.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <form action="confirm.php" method="POST">
+      <label for="name">①投稿者</label>
+      <input type="text" id="name" name="name">
+      <br>
+      <label for="date">②釣行日</label>
+      <input type="date" id="date" name="date">
+      <br>
+      <label for="place">③釣り場</label>
+      <select name="place" id="place">
+        <option value="">選択して下さい</option>
+        <option value="">秘密</option>
+        <optgroup label="尾張地区">
+          <option value="木曽三川周辺">木曽三川周辺</option>
+          <option value="名古屋港周辺">名古屋港周辺</option>
+          <option value="入鹿池">入鹿池</option>
+          <option value="尾張地区野池">尾張地区野池</option>
+          <option value="尾張地区その他">尾張地区その他</option>
+        </optgroup>
+        <optgroup label="知多半島">
+          <option value="新舞子マリンパーク">新舞子マリンパーク</option>
+          <option value="りんくう常滑護岸">りんくう常滑護岸</option>
+          <option value="常滑周辺">常滑周辺</option>
+          <option value="冨具崎港">冨具崎港</option>
+          <option value="内海新港">内海新港</option>
+          <option value="豊浜釣り桟橋">豊浜釣り桟橋</option>
+          <option value="豊浜周辺">豊浜周辺</option>
+          <option value="師崎周辺">師崎周辺</option>
+          <option value="篠島">篠島</option>
+          <option value="日間賀島">日間賀島</option>
+          <option value="大井漁港">大井漁港</option>
+          <option value="武豊緑地">武豊緑地</option>
+          <option value="半田港">半田港</option>
+          <option value="亀崎海浜緑地">亀崎海浜緑地</option>
+          <option value="知多半島野池">知多半島野池</option>
+          <option value="知多半島その他">知多半島その他</option>
+        </optgroup>
+        <optgroup label="三河地区">
+          <option value="衣浦周辺">衣浦周辺</option>
+          <option value="碧南海釣り公園">碧南海釣り公園</option>
+          <option value="矢作川河口">矢作川河口</option>
+          <option value="一色周辺">一色周辺</option>
+          <option value="吉良サンライズパーク">吉良サンライズパーク</option>
+          <option value="西浦周辺">西浦周辺</option>
+          <option value="幡豆周辺">幡豆周辺</option>
+          <option value="蒲郡周辺">蒲郡周辺</option>
+          <option value="豊川浄化センター">豊川浄化センター</option>
+          <option value="豊川河口">豊川河口</option>
+          <option value="矢作川">矢作川</option>
+          <option value="矢作ダム">矢作ダム</option>
+          <option value="三河湖">三河湖</option>
+          <option value="油ヶ淵">油ヶ淵</option>
+          <option value="三河地区野池">三河地区野池</option>
+          <option value="三河地区その他">三河地区その他</option>
+        </optgroup>
+        <optgroup label="渥美半島">
+          <option value="田原エコパーク">田原エコパーク</option>
+          <option value="田原港">田原港</option>
+          <option value="伊良湖港">伊良湖港</option>
+          <option value="伊良湖岬周辺">伊良湖岬周辺</option>
+          <option value="伊良湖サーフ">伊良湖サーフ</option>
+          <option value="赤羽根漁港">赤羽根漁港</option>
+          <option value="渥美半島野池">渥美半島野池</option>
+          <option value="渥美半島その他">渥美半島その他</option>
+        </optgroup>
+        <option value="その他">その他</option>
+      </select>
+      <br>
+      ④魚種<select name="fish" id="fish">
+        <option value="">選択して下さい</option>
+        <option value="アイナメ">アイナメ</option>
+        <option value="アオリイカ">アオリイカ</option>
+        <option value="アジ">アジ</option>
+        <option value="アナゴ">アナゴ</option>
+        <option value="アマゴ">アマゴ</option>
+        <option value="アユ">アユ</option>
+        <option value="イサキ">イサキ</option>
+        <option value="イシダイ">イシダイ</option>
+        <option value="イワシ">イワシ</option>
+        <option value="イワナ">イワナ</option>
+        <option value="ウナギ">ウナギ</option>
+        <option value="カサゴ">カサゴ</option>
+        <option value="カマス">カマス</option>
+        <option value="カレイ">カレイ</option>
+        <option value="カワハギ">カワハギ</option>
+        <option value="カンパチ(ショッコ•シオゴ•アカハナ)">カンパチ(ショッコ•シオゴ•アカハナ)</option>
+      </select>
+      <p>が</p>
+      <input type="number" id="catch" name="catch">
+      <br>
+      <p>⑥写真を選択して下さい。(最大4枚まで選択できます)</p>
+      <label for="picture1">写真1</label>
+      <input type="file" id="picture1" name="picture1">
+      <br>
+      <label for="picture2">写真2</label>
+      <input type="file" id="picture2" name="picture2">
+      <br>
+      <label for="picture3">写真3</label>
+      <input type="file" id="picture3" name="picture3">
+      <br>
+      <label for="picture4">写真4</label>
+      <input type="file" id="picture4" name="picture4">
+      <br>
+      <button type="submit">投稿する</button>
+    </form>
+
+  </div>
+</body>
+</html>
